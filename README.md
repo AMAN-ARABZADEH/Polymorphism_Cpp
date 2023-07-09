@@ -4,7 +4,7 @@ Example how Polymorphism  works in C++. Also known as third pillar of object-ori
 
 ## Introduction:
 
-This repository I provides an example of how polymorphism in C++ works. 
+This repository I provide an example of how polymorphism in C++ works. 
 The aim is to showcase how polymorphism enables code flexibility and extensibility by working with different derived classes through a common interface.
 
 ## Description:
