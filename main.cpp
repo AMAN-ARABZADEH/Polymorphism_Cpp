@@ -31,7 +31,7 @@ public:
     virtual std::string getName() const = 0;
     virtual void setName(const std::string& newName) = 0;
 
-    virtual ~Shape() {}
+    virtual ~Shape() {std::cout << "Base class destructor\n";}
 };
 
 // Derived class Rectangle
