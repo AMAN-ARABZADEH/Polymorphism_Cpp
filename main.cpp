@@ -49,7 +49,7 @@ public:
      * @param name The name of the Shape
      */
     Rectangle(double width = 0.0, double height = 0.0) : width(width), height(height) {}
-
+    ~Rectangle() {std::cout <<"Destructor called for: " << getName() << "\n";}
     double calculateArea() const override {
       // std::cout << getName() << ": ";
         return width * height;
@@ -79,7 +79,7 @@ public:
 
      */
     Triangle(double base = 0.0, double height = 0.0) : base(base), height(height) {}
-
+    ~Triangle() {std::cout <<"Destructor called for: " << getName() << ":\n";}
     double calculateArea() const override {
        // std::cout << getName() << ": ";
         return (base * height) / 2;
@@ -106,7 +106,7 @@ public:
      * @param side The length of the square's side.
      */
     Square(double side = 0.0) : side(side) {}
-
+    ~Square() {std::cout <<"Destructor called for: " << getName() << ":\n";}
     double calculateArea() const override {
         // std::cout << getName() << ": ";
         return side * side;
@@ -134,6 +134,7 @@ public:
      */
     Circle(double radius = 0.0) : radius(radius) {}
 
+    ~Circle() {std::cout <<"Destructor called for: " << getName() << ":\n";}
     double calculateArea() const override {
        // std::cout << getName() << ": ";
         return 3.14159 * radius * radius;
