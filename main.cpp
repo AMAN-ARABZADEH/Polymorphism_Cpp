@@ -19,6 +19,7 @@
  * code that operates on the base class interface. It promotes code reusability and makes the code more maintainable and scalable.
  */
 // Base class Shape
+
 class Shape {
 public:
     /**
@@ -40,7 +41,7 @@ public:
      * @param width The width of the rectangle.
      * @param height The height of the rectangle.
      */
-    Rectangle(double width, double height) : width(width), height(height) {}
+    Rectangle(double width = 0.0, double height = 0.0) : width(width), height(height) {}
 
     double calculateArea() const override {
         return width * height;
@@ -59,7 +60,7 @@ public:
      * @param base The base length of the triangle.
      * @param height The height of the triangle.
      */
-    Triangle(double base, double height) : base(base), height(height) {}
+    Triangle(double base = 0.0, double height = 0.0) : base(base), height(height) {}
 
     double calculateArea() const override {
         return (base * height) / 2;
@@ -76,7 +77,7 @@ public:
      * @brief Construct a new Square object.
      * @param side The length of the square's side.
      */
-    Square(double side) : side(side) {}
+    Square(double side = 0.0) : side(side) {}
 
     double calculateArea() const override {
         return side * side;
@@ -93,7 +94,7 @@ public:
      * @brief Construct a new Circle object.
      * @param radius The radius of the circle.
      */
-    Circle(double radius) : radius(radius) {}
+    Circle(double radius = 0.0) : radius(radius) {}
 
     double calculateArea() const override {
         return 3.14159 * radius * radius;
@@ -105,6 +106,7 @@ void displayArea(const Shape& shape) {
     // Uses polymorphism to call the appropriate calculateArea() function based on the actual type of the object
     std::cout << "Area: " << shape.calculateArea() << std::endl;
 }
+
 
 int main() {
     // Create objects of different shapes
