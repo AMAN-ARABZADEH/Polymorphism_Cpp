@@ -102,6 +102,7 @@ public:
 };
 
 // Function to display the area of a shape
+// passing the shape parameter by reference in displayArea() is essential for achieving polymorphic behavior and efficiently utilizing the derived class functionality.
 void displayArea(const Shape& shape) {
     // Uses polymorphism to call the appropriate calculateArea() function based on the actual type of the object
     std::cout << "Area: " << shape.calculateArea() << std::endl;
