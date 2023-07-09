@@ -37,7 +37,7 @@ public:
 // Derived class Rectangle
 class Rectangle : public Shape {
 private:
-    double width;
+    double width; 
     double height;
     std::string name;
 
