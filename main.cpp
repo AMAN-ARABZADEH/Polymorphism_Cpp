@@ -2,7 +2,7 @@
 
 /*
  * Author: Aman Arabzadeh
- * Polymorphism is a Greek word that means "many-shaped"
+ * Polymorphism is a Greek word that means "many-shaped" 
  *
  * Description: This code demonstrates polymorphism in C++. The base class Shape contains a pure virtual function calculateArea()
  * which is not implemented in the base class, making Shape an abstract class. The derived classes Rectangle, Triangle, Square, and Circle
