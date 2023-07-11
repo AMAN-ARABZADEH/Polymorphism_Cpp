@@ -43,3 +43,9 @@ To learn more about polymorphism and its applications in C++, consider referring
 - [W3Schools: C++ Polymorphism](https://www.w3schools.com/cpp/cpp_polymorphism.asp)
 - [Microsoft, Polymorphism](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/polymorphism)
 - Books and tutorials on C++ programming and object-oriented programming concepts.
+- 
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
